@@ -1,0 +1,23 @@
+- action:
+  - data:
+      entity_id: switch.front_yard_light_switch
+    service: homeassistant.turn_on
+  - data:
+      entity_id: switch.decorations_switch
+    service: homeassistant.turn_on
+  alias: Sunset
+  condition: []
+  id: '1516820458704'
+  trigger:
+  - event: sunset
+    platform: sun
+- action:
+  - data:
+      entity_id: switch.front_yard_light_switch
+    service: homeassistant.turn_off
+  alias: Sunrise
+  condition: []
+  id: '1516820501600'
+  trigger:
+  - event: sunrise
+    platform: sun

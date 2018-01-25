@@ -1,0 +1,11 @@
+version: '2'
+services:
+  web:
+    image: homeassistant/raspberrypi3-homeassistant
+    volumes:
+      - /home/pi/docker/homeassistant:/config
+      - /etc/localtime:/etc/localtime:ro
+    devices:
+      - /dev/ttyACM0:/dev/ttyACM0
+    restart: always
+    network_mode: host
