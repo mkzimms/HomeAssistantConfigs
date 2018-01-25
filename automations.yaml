@@ -21,3 +21,13 @@
   trigger:
   - event: sunrise
     platform: sun
+- action:
+  - data:
+      name: dark_theme
+    service: frontend.set_theme
+  alias: Set Theme
+  condition: []
+  id: '1516896365641'
+  trigger:
+  - event: start
+    platform: homeassistant
