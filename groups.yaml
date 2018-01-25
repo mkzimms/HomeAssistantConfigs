@@ -1,0 +1,21 @@
+  default_view:
+    view: yes
+    icon: mdi:home
+    entities:
+      - group.all_automations
+      - group.all_locks
+      - group.all_switches
+      - sun.sun
+  status:
+    view: yes
+    icon: mdi:eye
+    name: Status
+    entities:
+      - sensor.aeotec_dsb09104_home_energy_meter_power
+      - history_graph.network_speed
+  media:
+    view: yes
+    icon: mdi:television-classic
+    name: Media
+    entities:
+      - media_player.roku_yr002v879052

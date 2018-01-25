@@ -1,0 +1,8 @@
+  gr1:
+    name: Network Speed
+    entities:
+      - sensor.speedtest_download
+      - sensor.speedtest_upload
+      - sensor.speedtest_ping
+    hours_to_show: 24
+    refresh: 60

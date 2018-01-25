@@ -14,7 +14,7 @@ homeassistant:
   customize: !include customize.yaml
 
 # Show links to resources in log and frontend
-introduction:
+#introduction:
 
 # Enables the frontend
 frontend:
@@ -66,6 +66,8 @@ cloud:
 # Zwave
 zwave:
   usb_path: /dev/ttyACM0
+
+history_graph: !include graphs.yaml
 
 group: !include groups.yaml
 sensor: !include sensor.yaml

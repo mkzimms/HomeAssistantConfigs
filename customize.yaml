@@ -32,3 +32,11 @@ sensor.aeotec_dsb09104_home_energy_meter_power_6:
   hidden: true
 sensor.aeotec_dsb09104_home_energy_meter_power_4:
   hidden: true
+group.all_automations:
+  hidden: false
+group.all_scripts:
+  hidden: false
+group.all_switches:
+  hidden: false
+group.all_locks:
+  hidden: false
