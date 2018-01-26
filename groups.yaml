@@ -12,6 +12,7 @@
     name: Status
     entities:
       - sensor.aeotec_dsb09104_home_energy_meter_power
+      - history_graph.energy
       - history_graph.network_speed
   media:
     view: yes
