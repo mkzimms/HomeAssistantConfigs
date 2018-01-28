@@ -68,8 +68,8 @@ zwave:
   usb_path: /dev/ttyACM0
 
 history_graph: !include graphs.yaml
-
 group: !include groups.yaml
 sensor: !include sensor.yaml
 automation: !include automations.yaml
 script: !include scripts.yaml
+notify: !include notify.yaml

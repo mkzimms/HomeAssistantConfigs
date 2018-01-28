@@ -1,0 +1,12 @@
+  - name: sms_mike
+    platform: smtp
+    server: smtp.gmail.com
+    port: 587
+    timeout: 15
+    sender: !secret sms_mike_sender
+    encryption: starttls
+    username: !secret sms_mike_username
+    password: !secret sms_mike_password
+    recipient:
+      - !secret sms_mike_recipient
+    sender_name: Home Assistant
