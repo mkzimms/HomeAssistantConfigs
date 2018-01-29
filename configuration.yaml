@@ -67,6 +67,11 @@ cloud:
 zwave:
   usb_path: /dev/ttyACM0
 
+recorder:
+  purge_keep_days: 60
+  purge_interval: 1
+  db_url: !secret mysqldbpath
+
 history_graph: !include graphs.yaml
 group: !include groups.yaml
 sensor: !include sensor.yaml

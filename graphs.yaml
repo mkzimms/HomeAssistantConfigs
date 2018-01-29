@@ -5,10 +5,10 @@
       - sensor.speedtest_upload
       - sensor.speedtest_ping
     hours_to_show: 24
-    refresh: 60
+    refresh: 3600
   gr2:
     name: Energy
     entities:
       - sensor.aeotec_dsb09104_home_energy_meter_power
     hours_to_show: 24
-    refresh: 1
+    refresh: 60
