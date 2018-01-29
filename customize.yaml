@@ -40,3 +40,5 @@ group.all_switches:
   hidden: false
 group.all_locks:
   hidden: false
+switch.front_yard_light_switch:
+  icon: mdi:lightbulb-on

@@ -25,7 +25,7 @@
   - data:
       name: dark_theme
     service: frontend.set_theme
-  alias: Set Theme
+  alias: Initialize After Restart
   condition: []
   id: '1516896365641'
   trigger:
@@ -38,9 +38,22 @@
   - data:
       entity_id: group.all_locks
     service: lock.lock
-  alias: Good Night
+  alias: Secure House - Evening
   condition: []
   id: '1516932976861'
   trigger:
   - at: '23:00'
     platform: time
+- action:
+  - data:
+      message: '{{ states.lock.schlage_be469nxcen_touchscreen_deadbolt_locked.attributes.lock_status
+        }}'
+    service: notify.sms_mike
+  alias: Front Door Unlock Notification
+  condition: []
+  id: '1517194868549'
+  trigger:
+  - entity_id: lock.schlage_be469nxcen_touchscreen_deadbolt_locked
+    from: locked
+    platform: state
+    to: unlocked
